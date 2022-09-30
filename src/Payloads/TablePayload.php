@@ -13,7 +13,7 @@ class TablePayload extends Payload
         $data = [],
         $name = ''
     ) {
-        if (blank($this->name)) {
+        if (empty($this->name)) {
             $this->name = 'Table';
         }
         $this->data = $data;
