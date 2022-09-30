@@ -1,0 +1,31 @@
+{
+    "name": "yangweijie\/think-laradumps",
+    "description": "debug tool Using Laradumps App in ThinkPHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "yangweijie",
+            "email": "917647288@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "topthink/framework": "6.0.*",
+        "ramsey/uuid": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "think\\Laradumps\\": "src"
+        },
+        "files": [
+            "src/functions.php"
+        ]
+    },
+    "extra": {
+        "think": {
+            "config": {
+                "laradumps": "config/config.php"
+            }
+        }
+    }
+}
