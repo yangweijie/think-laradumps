@@ -46,7 +46,9 @@ $ composer require yangweijie/think-laradumps --dev -vvv
 
 #### Requirements
 
- PHP 7.2+ and ThinkPHP6.0+
+PHP 7.2+ and ThinkPHP5.0+
+
+> 5.0 要手动复制 `config/config.php` 到 项目根目录 `config/laradumps.php`
 
 #### Usage
 
