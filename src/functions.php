@@ -149,3 +149,16 @@ if (!function_exists('dsq')) {
         }
     }
 }
+
+if (!function_exists('base_path')) {
+    /**
+     * 获取应用基础目录
+     *
+     * @param string $path
+     * @return string
+     */
+    function base_path($path = '')
+    {
+        return app()->getRootPath().'app' . DIRECTORY_SEPARATOR . ($path ? $path . DIRECTORY_SEPARATOR : $path);
+    }
+}
