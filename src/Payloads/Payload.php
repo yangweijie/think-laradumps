@@ -86,6 +86,6 @@ abstract class Payload
 
     public function getInstalledVersion(): ?string
     {
-        return '1.3.2.0';
+        return '1.5.0';
     }
 }
