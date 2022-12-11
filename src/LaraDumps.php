@@ -23,9 +23,9 @@ class LaraDumps
 {
     use Colors;
 
+    public $backtrace      = [];
+    public $fullUrl        = '';
     public $notificationId = '';
-    public $fullUrl = '';
-    public $backtrace = [];
 
     public function __construct(
         $notificationId = '',
@@ -38,7 +38,7 @@ class LaraDumps
         }
 
         $this->fullUrl        = config('laradumps.host') . ':' . config('laradumps.port') . '/api/dumps';
-        $this->notificationId = $notificationId?? Str::uuid()->toString();
+        $this->notificationId = isset($notificationId)? $notificationId : Str::uuid()->toString();
         $this->backtrace      = $backtrace;
     }
 
